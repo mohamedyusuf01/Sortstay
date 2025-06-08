@@ -6,8 +6,8 @@ This repository contains the initial skeleton for a platform that allows local c
 
 1. **Backend**
    - Python and Flask provide a lightweight API service.
-   - Endpoints will allow hotels to publish room availability and councils to make reservations.
-   - Initial health check endpoint implemented as a starting point.
+   - Endpoints allow hotels to publish room availability, list rooms, and create bookings.
+   - Initial implementation stores data in memory for demonstration purposes.
 
 2. **Frontend**
    - To be implemented using a modern JavaScript framework (React or Vue) for a responsive portal.
@@ -29,3 +29,10 @@ This repository contains the initial skeleton for a platform that allows local c
    ```bash
    pytest
    ```
+
+## API Endpoints
+
+- `POST /availability` – add a room that is available for booking.
+- `GET /rooms` – list all available rooms.
+- `POST /book` – book a room by specifying the `room_id`.
+- `GET /health` – simple health check endpoint.
